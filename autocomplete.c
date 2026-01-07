@@ -323,7 +323,7 @@ bool parse_and_insert(const char* filename, TrieNode* trie_root) {
 // --- Main Program ---
 
 int main() {
-    const char* filename = "sample.txt";
+    const char* filename = "Context.txt";
     TrieNode* trie_root = create_node();
 
     if (!parse_and_insert(filename, trie_root)) {
@@ -378,3 +378,4 @@ int main() {
     free_trie(trie_root);
     return 0;
 }
+
